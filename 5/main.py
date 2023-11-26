@@ -3,4 +3,9 @@ class Sword:
         self.sword_type = sword_type
 
     def __add__(self, other):
-        pass
+        if self.sword_type == other.sword_type and self.sword_type == "bronze":
+            return Sword("iron")
+        elif self.sword_type == other.sword_type and self.sword_type == "iron":
+            return Sword("steel")
+        else:
+            raise Exception("can not craft")
