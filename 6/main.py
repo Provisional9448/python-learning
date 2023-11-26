@@ -4,4 +4,4 @@ class Dragon:
         self.color = color
 
     def __str__(self):
-        pass
+        return f"I am {self.name}, the {self.color} dragon"
